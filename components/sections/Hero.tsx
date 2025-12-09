@@ -4,8 +4,8 @@ import { TrendingUp, TrendingDown, ArrowRight } from 'lucide-react';
 import Button from '../ui/Button';
 import { HERO_CONTENT } from '../../constants';
 
-const Hero: React.FC = () => {
-  const scrollTo = (id: string) => {
+const Hero = () => {
+  const scrollTo = (id) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
   };
 

@@ -9,7 +9,7 @@ import CaseStudy from './components/sections/CaseStudy';
 import CTA from './components/sections/CTA';
 import Footer from './components/sections/Footer';
 
-const App: React.FC = () => {
+const App = () => {
   return (
     <main className="min-h-screen font-sans selection:bg-accent/20 selection:text-primary">
       <Navbar />

@@ -6,7 +6,6 @@ import {
   BarChart3, 
   Zap 
 } from 'lucide-react';
-import { ServiceItem, ClientSegment, BenefitItem } from './types';
 
 export const HERO_CONTENT = {
   h1: "AI Clarity for Modern Businesses.",
@@ -38,7 +37,7 @@ export const PROBLEM_CONTENT = {
   closing: "You don't need more tools. You need clarity."
 };
 
-export const SERVICES_CONTENT: ServiceItem[] = [
+export const SERVICES_CONTENT = [
   {
     title: "AI Audit",
     description: "A deep dive into your current processes. We identify bottlenecks and deliver a clear, step-by-step roadmap for AI adoption.",
@@ -56,7 +55,7 @@ export const SERVICES_CONTENT: ServiceItem[] = [
   }
 ];
 
-export const WHO_WE_HELP_CONTENT: ClientSegment[] = [
+export const WHO_WE_HELP_CONTENT = [
   {
     title: "Small Businesses",
     description: "Streamline operations to do more with a lean team."
@@ -71,7 +70,7 @@ export const WHO_WE_HELP_CONTENT: ClientSegment[] = [
   }
 ];
 
-export const WHY_NEOSMIND_CONTENT: BenefitItem[] = [
+export const WHY_NEOSMIND_CONTENT = [
   { text: "Business-first approach, not tech-first" },
   { text: "Structured, non-invasive audit process" },
   { text: "Measurable ROI from day one" },

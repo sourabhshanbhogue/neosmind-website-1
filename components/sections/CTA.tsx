@@ -1,9 +1,8 @@
 import React from 'react';
 import Button from '../ui/Button';
 import { CTA_CONTENT } from '../../constants';
-import { SectionProps } from '../../types';
 
-const CTA: React.FC<SectionProps> = ({ id, className }) => {
+const CTA = ({ id, className = '' }) => {
   const handleGetInTouch = () => {
     window.open('https://tally.so/r/kdl7lZ', '_blank');
   };

@@ -1,8 +1,7 @@
 import React from 'react';
 import { PROBLEM_CONTENT } from '../../constants';
-import { SectionProps } from '../../types';
 
-const Problem: React.FC<SectionProps> = ({ id, className }) => {
+const Problem = ({ id, className = '' }) => {
   return (
     <section id={id} className={`py-24 md:py-32 bg-white ${className}`}>
       <div className="max-w-[1100px] mx-auto px-6">

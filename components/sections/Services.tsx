@@ -2,9 +2,8 @@ import React from 'react';
 import Card from '../ui/Card';
 import Button from '../ui/Button';
 import { SERVICES_CONTENT } from '../../constants';
-import { SectionProps } from '../../types';
 
-const Services: React.FC<SectionProps> = ({ id, className }) => {
+const Services = ({ id, className = '' }) => {
   const handleGetInTouch = () => {
     window.open('https://tally.so/r/kdl7lZ', '_blank');
   };

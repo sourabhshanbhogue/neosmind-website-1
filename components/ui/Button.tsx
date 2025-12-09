@@ -1,11 +1,6 @@
 import React from 'react';
 
-interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: 'primary' | 'secondary' | 'outline';
-  fullWidth?: boolean;
-}
-
-const Button: React.FC<ButtonProps> = ({ 
+const Button = ({ 
   children, 
   variant = 'primary', 
   fullWidth = false, 

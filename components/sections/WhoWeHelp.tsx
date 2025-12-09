@@ -1,8 +1,7 @@
 import React from 'react';
 import { WHO_WE_HELP_CONTENT } from '../../constants';
-import { SectionProps } from '../../types';
 
-const WhoWeHelp: React.FC<SectionProps> = ({ id, className }) => {
+const WhoWeHelp = ({ id, className = '' }) => {
   return (
     <section id={id} className={`py-24 md:py-32 bg-white ${className}`}>
       <div className="max-w-[1100px] mx-auto px-6">

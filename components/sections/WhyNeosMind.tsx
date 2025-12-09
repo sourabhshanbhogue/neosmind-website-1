@@ -1,9 +1,8 @@
 import React from 'react';
 import { Check } from 'lucide-react';
 import { WHY_NEOSMIND_CONTENT } from '../../constants';
-import { SectionProps } from '../../types';
 
-const WhyNeosMind: React.FC<SectionProps> = ({ id, className }) => {
+const WhyNeosMind = ({ id, className = '' }) => {
   return (
     <section id={id} className={`py-24 md:py-32 bg-primary text-white ${className}`}>
       <div className="max-w-[1100px] mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
