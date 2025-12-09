@@ -19,6 +19,10 @@ const Navbar: React.FC = () => {
     }
   };
 
+  const handleGetInTouch = () => {
+    window.open('https://tally.so/r/kdl7lZ', '_blank');
+  };
+
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white/90 backdrop-blur-md py-4 shadow-sm border-b border-neutral-100' : 'bg-transparent py-6'}`}>
       <div className="max-w-[1100px] mx-auto px-6 flex items-center justify-between">
@@ -36,7 +40,7 @@ const Navbar: React.FC = () => {
           <button onClick={() => scrollToSection('case-study')} className="text-sm font-medium text-neutral-600 hover:text-primary transition-colors">Case Study</button>
         </div>
 
-        <Button variant="primary" className="!px-6 !py-2.5 !text-xs md:!text-sm" onClick={() => scrollToSection('cta')}>
+        <Button variant="primary" className="!px-6 !py-2.5 !text-xs md:!text-sm" onClick={handleGetInTouch}>
           Get in Touch
         </Button>
       </div>

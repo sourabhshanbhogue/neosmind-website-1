@@ -5,8 +5,8 @@ import { SERVICES_CONTENT } from '../../constants';
 import { SectionProps } from '../../types';
 
 const Services: React.FC<SectionProps> = ({ id, className }) => {
-  const scrollToCTA = () => {
-    document.getElementById('cta')?.scrollIntoView({ behavior: 'smooth' });
+  const handleGetInTouch = () => {
+    window.open('https://tally.so/r/kdl7lZ', '_blank');
   };
 
   return (
@@ -37,7 +37,7 @@ const Services: React.FC<SectionProps> = ({ id, className }) => {
         </div>
 
         <div className="flex justify-center mt-16">
-          <Button onClick={scrollToCTA}>Get in Touch</Button>
+          <Button onClick={handleGetInTouch}>Get in Touch</Button>
         </div>
       </div>
     </section>

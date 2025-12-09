@@ -9,6 +9,10 @@ const Hero: React.FC = () => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const handleGetInTouch = () => {
+    window.open('https://tally.so/r/kdl7lZ', '_blank');
+  };
+
   // 3x3 Grid generation for the "Chaos to Clarity" visual
   const blocks = Array.from({ length: 9 }).map((_, i) => {
     const row = Math.floor(i / 3);
@@ -43,7 +47,7 @@ const Hero: React.FC = () => {
             {HERO_CONTENT.subheadline}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
-            <Button onClick={() => scrollTo('cta')}>
+            <Button onClick={handleGetInTouch}>
               {HERO_CONTENT.ctaPrimary}
             </Button>
             <Button variant="outline" onClick={() => scrollTo('services')}>
